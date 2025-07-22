@@ -32,6 +32,7 @@
     "mocha": "^11.7.1",
     "prettier": "3.6.2",
     "standard-version": "^9.5.0",
+    "ts-mocha": "^11.1.0",
     "ts-node": "^10.9.2",
     "tsup": "8.5.0",
     "typedoc": "0.28.7",
@@ -52,9 +53,9 @@
     "link": "npm link && npm link ts-sdk-demo",
     "lint": "eslint \"{src,tests}/**/*.{js,ts,tsx}\"",
     "lint:fix": "eslint \"{src,tests}/**/*.{js,ts,tsx}\" --fix",
-    "test": "yarn run mocha -p ./tsconfig.json -t 1000000 tests/**.spec.ts",
+    "test": "ts-mocha -p ./tsconfig.json -t 1000000 tests/**.spec.ts",
     "release": "standard-version && git push --follow-tags",
     "release:publish": "npm publish"
   },
-  "packageManager": "yarn@4.9.2"
+  "packageManager": "pnpm@10.13.1"
 }
