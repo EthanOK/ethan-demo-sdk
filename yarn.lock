@@ -779,6 +779,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^24.0.15":
+  version: 24.0.15
+  resolution: "@types/node@npm:24.0.15"
+  dependencies:
+    undici-types: "npm:~7.8.0"
+  checksum: 10c0/39ead0c0ff25dde29357630b5eaa7dd73cf3af796dbd0f01ed439a8af01cbddfa6b68aa9d67fb3243962836170a4463ff856c47fa822250c585987f707eb42b3
+  languageName: node
+  linkType: hard
+
 "@types/normalize-package-data@npm:^2.4.0":
   version: 2.4.4
   resolution: "@types/normalize-package-data@npm:2.4.4"
@@ -2072,6 +2081,7 @@ __metadata:
   dependencies:
     "@types/chai": "npm:^5.2.2"
     "@types/mocha": "npm:^10.0.10"
+    "@types/node": "npm:^24.0.15"
     chai: "npm:^5.2.1"
     dotenv: "npm:17.2.0"
     eslint: "npm:9.31.0"
@@ -2079,8 +2089,9 @@ __metadata:
     husky: "npm:^9.1.7"
     lint-staged: "npm:16.1.2"
     mocha: "npm:^11.7.1"
-    prettier: "npm:3.6.2"
+    prettier: "npm:^3.6.2"
     standard-version: "npm:^9.5.0"
+    ts-mocha: "npm:^11.1.0"
     ts-node: "npm:^10.9.2"
     tsup: "npm:8.5.0"
     typedoc: "npm:0.28.7"
@@ -3763,7 +3774,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.6.2":
+"prettier@npm:^3.6.2":
   version: 3.6.2
   resolution: "prettier@npm:3.6.2"
   bin:
@@ -4615,6 +4626,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ts-mocha@npm:^11.1.0":
+  version: 11.1.0
+  resolution: "ts-mocha@npm:11.1.0"
+  peerDependencies:
+    mocha: ^3.X.X || ^4.X.X || ^5.X.X || ^6.X.X || ^7.X.X || ^8.X.X || ^9.X.X || ^10.X.X || ^11.X.X
+    ts-node: ^7.X.X || ^8.X.X || ^9.X.X || ^10.X.X
+    tsconfig-paths: ^4.X.X
+  peerDependenciesMeta:
+    tsconfig-paths:
+      optional: true
+  bin:
+    ts-mocha: bin/ts-mocha
+  checksum: 10c0/68cb524063ec6c20abf8fecf72ca489fff4be28806c93a64221eb31cfc21805ed836a96aa488d1bc609eb12121f01a2cd65c0e4114a453df46ba5bdb9a32efe1
+  languageName: node
+  linkType: hard
+
 "ts-node@npm:^10.9.2":
   version: 10.9.2
   resolution: "ts-node@npm:10.9.2"
@@ -4818,6 +4845,13 @@ __metadata:
   version: 6.19.8
   resolution: "undici-types@npm:6.19.8"
   checksum: 10c0/078afa5990fba110f6824823ace86073b4638f1d5112ee26e790155f481f2a868cc3e0615505b6f4282bdf74a3d8caad715fd809e870c2bb0704e3ea6082f344
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~7.8.0":
+  version: 7.8.0
+  resolution: "undici-types@npm:7.8.0"
+  checksum: 10c0/9d9d246d1dc32f318d46116efe3cfca5a72d4f16828febc1918d94e58f6ffcf39c158aa28bf5b4fc52f410446bc7858f35151367bd7a49f21746cab6497b709b
   languageName: node
   linkType: hard
 
